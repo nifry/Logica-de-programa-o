@@ -24,22 +24,23 @@ escreva("Voce vai querer Alcool ou Gasolina?")
 leia(opcao)
 
 escreva("Quantidade de Litros?")
-leia(litos)
+leia(litros)
 
 //Desconto da Gasolina
 
-se ( litros >= 1) e (litros <= 25) entao
-valordagasolina <- (6.59 * litros)- ((6.59 * litros)* 0.03)
+se (litros >= 1) e (litros <= 25) entao
+valordagasolina <- (6.59*litros)- ((6.59*litros)*0.03)
 senao
-valordagasolina <- (6.59 * litros) - ((6.59 * litros) * 0.05 )
+valordagasolina <- (6.59*litros) - ((6.59*litros)*0.05 )
 
 fimse
 
 //Desconto do Alcool
-se ( litros >= 1) e (litros <= 25) entao
-valordoalcool <- (3.79 * litros) - ((3.79 * litros)* 0.02)
+se (litros >= 1) e (litros <= 25) entao
+valordoalcool <- (3.79*litros) - ((3.79*litros)*0.02)
 senao
-valordoalcool <- ( 3.79 * litros) -((3.79 * litors) * 0.004)
+valordoalcool <- ( 3.79*litros) - ((3.79*litros)*0.004)
+fimse
 
 //Opção
 
